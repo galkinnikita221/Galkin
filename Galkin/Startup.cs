@@ -27,14 +27,14 @@ namespace Galkin
                 c.SwaggerDoc("v2", new Microsoft.OpenApi.Models.OpenApiInfo
                 {
                     Version = "v2",
-                    Title = "Фильмы в кинотеатре",
-                    Description = "Добавление, удаление, изменение и получение списка о кинотеатрах"
+                    Title = "Кинотеатр",
+                    Description = "Добавление, удаление, изменение и получение списка о фильмах"
                 });
                 c.SwaggerDoc("v3", new Microsoft.OpenApi.Models.OpenApiInfo
                 {
                     Version = "v3",
-                    Title = "Авторизация пользователей",
-                    Description = "Добавление, удаление, изменение и получение списка о фильмах"
+                    Title = "Фильмы в кинотеатре",
+                    Description = "Добавление, удаление, изменение и получение списка о кинотеатрах"
                 });
                 string filePath = Path.Combine(AppContext.BaseDirectory, "Galkin.xml");
                 c.IncludeXmlComments(filePath);

@@ -1,0 +1,146 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Galkin</name>
+    </assembly>
+    <members>
+        <member name="M:Galkin.Context.CinemaContext.OnConfiguring(Microsoft.EntityFrameworkCore.DbContextOptionsBuilder)">
+            <summary>
+            Переопределение метода конфигурации
+             </summary>
+             <param name="optionsBuilder"></param>
+        </member>
+        <member name="M:Galkin.Context.FilmsContext.OnConfiguring(Microsoft.EntityFrameworkCore.DbContextOptionsBuilder)">
+            <summary>
+            Переопределение метода конфигурации
+             </summary>
+             <param name="optionsBuilder"></param>
+        </member>
+        <member name="M:Galkin.Context.UserContext.OnConfiguring(Microsoft.EntityFrameworkCore.DbContextOptionsBuilder)">
+            <summary>
+            Переопределение метода конфигурации
+             </summary>
+             <param name="optionsBuilder"></param>
+        </member>
+        <member name="M:Galkin.Controllers.CinemaControllers.Get(System.String)">
+            <summary>
+            Получение списка кинотеатров
+             </summary>
+             <param name="name"></param>
+             <param name="time"></param>
+             <param name="price"></param>
+             <param name="vozm"></param>
+             <returns>Список кинотеатров</returns>
+             <response code="200">Успешное получение</response>
+             <response code="400">Ошибка в данных</response>
+             <response code="401">Неавторизованный пользователь</response>
+             <response code="500">Ошибка сервера</response>
+        </member>
+        <member name="M:Galkin.Controllers.CinemaControllers.Delete(System.Int32,System.String)">
+            <summary>
+            Удаление списка кинотеатров
+             </summary>
+             <param name="name"></param>
+             <param name="time"></param>
+             <param name="price"></param>
+             <param name="vozm"></param>
+             <returns>Список кинотеатров</returns>
+             <response code="200">Успешное получение</response>
+             <response code="400">Ошибка в данных</response>
+             <response code="401">Неавторизованный пользователь</response>
+             <response code="500">Ошибка сервера</response>
+        </member>
+        <member name="M:Galkin.Controllers.CinemaControllers.Add(Galkin.Model.Cinema,System.String)">
+            <summary>
+            Добавление списка кинотеатров
+             </summary>
+             <param name="name"></param>
+             <param name="time"></param>
+             <param name="price"></param>
+             <param name="vozm"></param>
+             <returns>Список кинотеатров</returns>
+             <response code="200">Успешное получение</response>
+             <response code="400">Ошибка в данных</response>
+             <response code="401">Неавторизованный пользователь</response>
+             <response code="500">Ошибка сервера</response>
+        </member>
+        <member name="M:Galkin.Controllers.CinemaControllers.Change(Galkin.Model.Cinema,System.String)">
+            <summary>
+            Изменение списка кинотеатров
+             </summary>
+             <param name="name"></param>
+             <param name="time"></param>
+             <param name="price"></param>
+             <param name="vozm"></param>
+             <returns>Список кинотеатров</returns>
+             <response code="200">Успешное получение</response>
+             <response code="400">Ошибка в данных</response>
+             <response code="401">Неавторизованный пользователь</response>
+             <response code="500">Ошибка сервера</response>
+        </member>
+        <member name="M:Galkin.Controllers.FilmsControllers.Get(System.String)">
+            <summary>
+            Получение списка фильмов
+             </summary>
+             <param name="name"></param>
+             <param name="author"></param>
+             <param name="description"></param>
+             <returns>Список фильмов</returns>
+             <response code="200">Успешное получение</response>
+             <response code="400">Ошибка в данных</response>
+             <response code="401">Неавторизованный пользователь</response>
+             <response code="500">Ошибка сервера</response>
+        </member>
+        <member name="M:Galkin.Controllers.FilmsControllers.Delete(System.Int32,System.String)">
+            <summary>
+            Удаление списка фильмов
+             </summary>
+             <param name="name"></param>
+             <param name="author"></param>
+             <param name="description"></param>
+             <returns>Список фильмов</returns>
+             <response code="200">Успешное получение</response>
+             <response code="400">Ошибка в данных</response>
+             <response code="401">Неавторизованный пользователь</response>
+             <response code="500">Ошибка сервера</response>
+        </member>
+        <member name="M:Galkin.Controllers.FilmsControllers.Add(Galkin.Model.Films,System.String)">
+            <summary>
+            Добавление списка фильмов
+             </summary>
+             <param name="name"></param>
+             <param name="author"></param>
+             <param name="description"></param>
+             <returns>Список фильмов</returns>
+             <response code="200">Успешное получение</response>
+             <response code="400">Ошибка в данных</response>
+             <response code="401">Неавторизованный пользователь</response>
+             <response code="500">Ошибка сервера</response>
+        </member>
+        <member name="M:Galkin.Controllers.FilmsControllers.Change(Galkin.Model.Films,System.String)">
+            <summary>
+            Изменение списка фильмов
+             </summary>
+             <param name="name"></param>
+             <param name="author"></param>
+             <param name="description"></param>
+             <returns>Список фильмов</returns>
+             <response code="200">Успешное получение</response>
+             <response code="400">Ошибка в данных</response>
+             <response code="401">Неавторизованный пользователь</response>
+             <response code="500">Ошибка сервера</response>
+        </member>
+        <member name="M:Galkin.Controllers.UserControllers.Get(System.String,System.String)">
+            <summary>
+            Получение списка авторизованных пользователей
+             </summary>
+             <param name="login"></param>
+             <param name="password"></param>
+             <returns>Получение списка пользователей</returns>
+             <response code="200">Успешное получение данных</response>
+             <response code="400">Ошибка в данных</response>
+             <response code="401">Неавторизованный пользователь</response>
+             <response code="500">Неавторизованный пользователь</response>
+        </member>
+    </members>
+</doc>
